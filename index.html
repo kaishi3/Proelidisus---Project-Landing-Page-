@@ -1,40 +1,83 @@
 <!DOCTYPE HTML>
 <html>
     <head>
-
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles.css">
     </head>
-    <body>
+    <body class="body">
         <!-- this is the header -->
         <div class="header">
-            <div class="left">Header Logo</div>
+            <div class="left">
+                <img src="images/senshi.png" class="senshi">
+                <!-- <div>Proelidisus</div> -->
+            </div>
             <div class="right">
-                <a>Link 1</a>
-                <a>Link 2</a>
-                <a>Link 3</a>
+                <a>About</a>
+                <a>FAQ</a>
+                <a>Join</a>
             </div>
         </div>
         
+        <!-- this wraps the body (excluding header and footer) -->
+        <div class="body">
         <!-- this is the top block -->
         <div class="top-block">
+            <div class="container">
             <!-- this is the flexbox on the left of the image -->
+            <div class="vertical_container">
+                <div class="text1"><b>Welcome to Proelius.</b></div>
+                <div class="text2">Dare you venture into the sacred land of the warrior? Only those with true fighting spirit are welcome here. Come with me, young one, if you so desire!</div>
+                <button class="signup_button1">To the Sacred Land</button>
+            </div>
 
             <!-- this is where the image goes -->
-        
-        
+            <div class="vertical_container">
+            <img src="images/portal.gif" alt="temporary image">
+            <a href="https://aminoapps.com/c/anime/page/blog/6bn3qqnzvbe5jaskhwhftsrp7i/Rqtw_uLw1jlY0lDjYmBN5nDwxK4YDE">Source</a>
+        </div>
+        </div>
+        <div class="credits"><a href="https://www.pixiv.net/en/artworks/22852475">Background art by: Ryosios</a></div>
         </div>
 
         <!-- this is the middle block -->
         <div class="mid-block">
             <!-- this is the top text -->
+            <div class="bigbold"> Decide your own fate. </div>
 
             <!-- this is the flexbox for all of the images/captions -->
+            <div class="horizontal_container">
+                <div class="vertical_container">
+                    <img class="img" src="images/dojo.jpeg" alt="image">
+                    <div>Training Grounds</div>
+                    <div class="small">Come to sharpen your mind and toughen your body at the finest dojos</div>
+                </div>
+                <div class="vertical_container">
+                    <img class="img" src="images/masters.webp" alt="image">
+                    <div>Masters</div>
+                    <div class="small">Learn and grow under the finest masters</div>
+                </div>
+                <div class="vertical_container">
+                    <img class="img" src="images/guild.webp" alt="image">
+                    <div>Quests</div>
+                    <div class="small">Travel to unimaginable lands and battle the world's most averse enemies</div>
+                </div>
+                <div class="vertical_container">
+                    <img class="img" src="images/treasure.jpeg" alt="image">
+                    <div>Treasure</div>
+                    <div class="small">Claim bountiful loot and live the life of your wildest dreams </div>
+                </div>
+            </div>
         </div>
 
 
         <!-- this is the quote block -->
-        <div class="quote">
+        <div class="quote_block">
             <!-- we want to align the quote to the left,
             then place the person who the quote is from in the bottom and align it to the right -->
+            <div class="vertical_container">
+                <div class="quote">“Study strategy over the years and achieve the spirit of the warrior. Today is victory over yourself of yesterday; tomorrow is your victory over lesser men.”</div>
+                <div class="author">Miyamoto Musashi</div>
+            </div>
 
         </div>
 
@@ -42,12 +85,17 @@
         <div class="signup">
             <!-- the text on the left will be in a flexbox and the signup on the right will be in 
             its own flexbox as well. -->
-
+            <div class="vertical_container">
+                <div>top text</div>
+                <div>bottom text</div>
+            </div>
+            <button class="signup_button2">sign up</button>
         </div>
+    </div>
 
         <!-- this is the footer block -->
         <div class="footer">
-
+            Copyright @ kaishi3 
         </div>
     </body>
 </html>
