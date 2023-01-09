@@ -27,7 +27,7 @@ body {
     align-items:center;
     background-color: #3f454d;
     color:rgb(231, 228, 228);
-    padding: 0px 10px;
+    padding: 0px 15px;
     position: sticky;
     top: 0; 
     bottom:0;
@@ -115,7 +115,8 @@ a {
 
 .credits{
     display: flex;
-    margin-top: auto;
+    position:relative;
+    margin-top: 50px;
 }
 
 .vertical_container{
@@ -176,19 +177,63 @@ a {
     text-align:center;
 }
 
+
+
+/* this is the background for the quote and signup blocks
+notice that i've included the background image here directly in the css
+using the ::before property. this is as opposed to what I did above 
+where I had the background image as part of the flex for the top block. 
+the problem with the way that it's done above is applying an opacity to the 
+image causes all of the text to inherit that opacity. with the way i've done it on 
+the bottom, the child elements dont have to inherit the opacity of the background image. */
+.samurai{
+    position:relative;
+    height:100vh;
+    width:100%;
+    display:flex;
+    align-items:center;
+    flex-direction:column;
+    justify-content:center;
+}
+
+.samurai::before{
+    content:"";
+    background-image: url(images/samurai.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    position:absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+
+    opacity: 60%;
+
+}
+
 /* this is for the quote block */
 .quote_block{
     display:flex;
-    /* justify-content:center; */
-    /* align-items:center; */
+    justify-content:center;
+    align-items:center;
     flex-direction:column;
     flex-wrap:wrap;
-    width: 80vw;
+    position:relative;
     padding: 20px;
+}
+
+.vertical_container2{
+    display:flex;
+    flex-direction:column;
+    width: 60vw;
+    gap:20px;
 }
 
 .quote{
     align-self: flex-start;
+    font-weight: 900;
     font-size: 20px;
 }
 
@@ -202,9 +247,25 @@ a {
     justify-content:center;
     gap: 50px;
     padding: 40px 80px;
+    /* position:absolute; */
+    border: 5px solid white;
+    background-color: rgb(184, 245, 184);
+    opacity: 90%;
+    border-radius: 15px;
+    margin: 20vh;
+
 }
 
+
+#again{
+    align-items: flex-start;
+}
 .signup_button2{
+    color:black;
+    border: black solid 2px;
+    background-color: rgb(184, 245, 184);
+    padding: 5px 20px;
+    border-radius: 5px;
 
 }
 
@@ -219,4 +280,5 @@ a {
     bottom: 0;
     z-index: 0;
     opacity: 90%;
+    padding: 20px;
 }
